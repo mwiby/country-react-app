@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import Header from "./compnents/Header";
 
-function App() {
+const App = () => {
+  /*
+  const [country, setCountry] = useState([]);
+  const [loading, setloading] = useState([true]);
+
+  const loadCountries = async () => {
+
+    try {
+
+
+
+    }
+    catch(err) {
+      console.log(err);
+  }
+}
+*/
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Header />
     </div>
   );
-}
+};
 
 export default App;
