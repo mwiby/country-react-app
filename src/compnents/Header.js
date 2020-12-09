@@ -1,11 +1,17 @@
 import React from "react";
 
-const Header = () => {
+const Header = (props) => {
+  const { getData, loading } = props;
+
+  const handleClick = () => {
+    loading(true);
+    getData();
+  };
   return (
     <>
       <header className="title">
-        <div className="half-circle"></div>
         <h1>World Countries</h1>
+        <div className="circle" onClick={handleClick}></div>
       </header>
     </>
   );
