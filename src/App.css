@@ -29,7 +29,7 @@ body {
   animation: 2s slideIn-left;
   padding-right: 20px;
 }
-.circle {
+.circle-active {
   cursor: pointer;
   width: 60px;
   height: 60px;
@@ -44,7 +44,7 @@ body {
   border: 1px solid #5c5f5f;
   animation: fadeIn ease 4s;
 }
-.circle:before {
+.circle-active:before {
   content: "";
   display: block;
   width: 100%;
@@ -53,6 +53,11 @@ body {
   border-radius: 45px;
   background-color: #cdddcd;
   animation: pulse-ring 2.25s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+.circle-inactive {
+  width: 60px;
+  height: 60px;
+  z-index: -1;
 }
 
 @keyframes pulse-ring {
