@@ -4,7 +4,7 @@ import Header from "./compnents/Header";
 import ContGrid from "./compnents/ContGrid";
 
 const App = () => {
-  const [countries, setCountries] = useState([]);
+  const [countries, setCountries] = useState([null]);
   const [loading, setloading] = useState([false]);
 
   const loadCountries = async () => {
@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div className="container">
       <Header getData={loadCountries} loading={setloading} />
-      <ContGrid countries={countries} loading={loading} />
+      <ContGrid countries={countries} />
     </div>
   );
 };
