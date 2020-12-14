@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Header = (props) => {
-  const { getData, loading } = props;
+const Header = ({ getData, loading }) => {
   const [circle, setCircle] = useState([true]);
 
   const handleClick = () => {

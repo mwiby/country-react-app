@@ -35,9 +35,9 @@ body {
   height: 60px;
   background-image: linear-gradient(
     15deg,
-    rgb(164, 180, 204) 5%,
-    rgb(72, 124, 169) 45%,
-    rgb(130, 161, 89) 88%
+    rgb(36, 13, 11) 5%,
+    rgb(97, 0, 18) 45%,
+    rgb(83, 5, 5) 88%
   );
 
   border-radius: 100px;

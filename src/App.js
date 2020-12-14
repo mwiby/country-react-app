@@ -22,7 +22,7 @@ const App = () => {
   return (
     <div className="container">
       <Header getData={loadCountries} loading={setloading} />
-      <ContGrid />
+      <ContGrid countries={countries} loading={loading} />
     </div>
   );
 };
