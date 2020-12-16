@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --text-color: #f7f7f7;
+  --title-color: #181818;
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -21,7 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 4em 0;
-  color: var(--text-color);
+  color: var(--title-color);
   letter-spacing: 0.1em;
   margin: 0 auto;
 }
@@ -62,16 +62,19 @@ body {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  height: 80vh;
+  overflow: auto;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.9em;
   width: 75%;
   margin: 0 auto;
 }
 
 .card {
+  max-width: 100%;
   cursor: pointer;
   background: transparent;
-  height: 380px;
+  height: 350px;
   perspective: 1000px;
 }
 .card li {
@@ -85,9 +88,9 @@ body {
   margin-bottom: 10px;
 }
 .card-front img {
-  width: 100%;
-  height: 380px;
   object-fit: cover;
+  height: 350px;
+  width: 100%;
 }
 .card-inner {
   position: relative;
@@ -108,7 +111,7 @@ body {
   backface-visibility: hidden;
 }
 .card-back {
-  background-color: #2b3020;
+  background-color: #2e2e2e;
   color: white;
   padding: 20px;
   transform: rotateY(180deg);

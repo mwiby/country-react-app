@@ -7,7 +7,18 @@ const Country = ({ country }) => {
         <div className="card-front">
           <img src={country.flag} alt="flag of the country" />
         </div>
-        <div className="card-back"></div>
+        <div className="card-back">
+          <h2>{country.name}</h2>
+          <ul>
+            <li>
+              <span>Capital: </span>
+              {country.capital}
+            </li>
+            <li>
+              <span>Languages:</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
