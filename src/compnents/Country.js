@@ -15,7 +15,12 @@ const Country = ({ country }) => {
               {country.capital}
             </li>
             <li>
-              <span>Languages:</span>
+              <span>Population: </span>
+              {country.population}
+            </li>
+            <li>
+              <span>Region: </span>
+              {country.region}
             </li>
           </ul>
         </div>
